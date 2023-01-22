@@ -21,6 +21,7 @@ async function fetchPosts(url){
 }
 
 function updatePosts(){
+    postsElem.innerHTML = "";
     posts.forEach(post => {
         const title = post.title;
         const body = post.body;
