@@ -7,9 +7,9 @@ let posts = []
 btn.addEventListener("click", ()=>{fetchPosts(url)});
 
 async function fetchPosts(url){
+    postsElem.innerHTML = "";
+    postsElem.prepend(loader);
     try{
-        postsElem.innerHTML = "";
-        postsElem.prepend(loader);
         const responce =  await fetch(url, {cache: "no-store"});
         posts = await responce.json();
     }
