@@ -4,12 +4,12 @@ const postsElem = document.querySelector(".posts");
 const loader = document.createElement('div');
 loader.classList.add("loader");
 let posts = []
-btn.addEventListener("click", ()=>{fetchPosts(url, {cache: "no-store"})});
+btn.addEventListener("click", ()=>{fetchPosts(url)});
 async function fetchPosts(url){
     try{
         postsElem.innerHTML = "";
         postsElem.prepend(loader);
-        const responce =  await fetch(url);
+        const responce =  await fetch(url, {cache: "no-store"});
         posts = await responce.json();
     }
     catch(e){
