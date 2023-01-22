@@ -32,7 +32,7 @@ async function fetchComments(url, postElem){
         comments = await responce.json();
     }
     catch(e){
-        alert("Error" + e);
+        alert(e);
     }
     finally{
         commentsElem.removeChild(loader);
