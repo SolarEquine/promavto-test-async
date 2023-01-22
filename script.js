@@ -24,6 +24,7 @@ async function fetchPosts(url){
 
 async function fetchComments(url, postElem){
     const commentsElem = postElem.querySelector(".comments");
+    commentsElem.innerHTML = "";
     commentsElem.prepend(loader);
     let comments = [];
     try{
