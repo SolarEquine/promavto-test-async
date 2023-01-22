@@ -18,6 +18,23 @@
     margin-bottom: 10px;
 }
 
+.comments{
+    margin-left: 50px;
+}
+
+.comment{
+    border-left: 1px solid teal;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.comment_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-bottom: 1px solid teal;
+}
+
 .loader{
     height: 100px;
     width: 100px;
